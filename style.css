@@ -135,8 +135,8 @@ html {
     box-sizing: border-box;
     width: auto;
     height: auto;
-    min-width: 200px;
-    min-height: 200px;
+    max-height: 90%;
+    max-width: 90%;
     z-index: 1000; /* Optional, falls du sicherstellen möchtest, dass das Fenster immer oben angezeigt wird */
     text-align: center;
 }
