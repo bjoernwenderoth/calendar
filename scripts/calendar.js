@@ -15,7 +15,7 @@ function Door(calendar, day) {
         innerNode.innerHTML = day;
         innerNode.href = "#";   
 
-        if ( /* ( currentDate.getMonth() + 1 ) < 12 || */ currentDate.getDate() < day) {
+        if (  ( currentDate.getMonth() + 1 ) < 12 ||  currentDate.getDate() < day) {
             innerNode.className = "disabled";
             innerNode.onclick = function () {
                 return false;
@@ -38,7 +38,7 @@ function openDoorDiv(adventMessage, day) {
     <h1>Türchen ${day}</h1>
     <img src="images/door_${day}.jpg" alt="">
     <h3>${adventMessage}</h3>
-    <p>- Ich liebe dich!</p>
+    <p><i>- Ich liebe dich!</i></p>
     </div>`;
 }
 
