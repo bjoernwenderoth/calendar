@@ -1,6 +1,6 @@
 let messages = [
 	["Was tippst du da soviel?! Was machst du da?! - Jetzt weißt du es :P Na gut.. Vielleicht hattest du nach Friedas Tipps schon eine kleine Vorahnung aaaber egal :)<br>Da mir die Idee vielleicht etwas spontan kam, musste bei dir auch noch einiges getan werden :D."],
-	[""],
+	["Auf zu Tobi! Nachdem wir relativ spontan gebucht hatten, ging es los nach Tobilein. Es war so ein toller Urlaub. Ich freue mich schon auf die nächsten Urlaube mit dir. Und außerdem sind wir sein sehr hübsches Jetzt-Gehts-In-Den-Urlaub-Paar :P"],
 	[""],
 	[""],
 	[""],
