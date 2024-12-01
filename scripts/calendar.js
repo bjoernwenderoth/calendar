@@ -36,7 +36,7 @@ function openDoorDiv(adventMessage, day) {
     <div class="openMessage">
     <h2 onclick="closeMessage()">x</h2>
     <h1>Türchen ${day}</h1>
-    <img src="/images/door_${day}.jpg" alt="">
+    <img src="images/door_${day}.jpg" alt="">
     <h3>${adventMessage}</h3>
     <p>- Ich liebe dich!</p>
     </div>`;
