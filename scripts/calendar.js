@@ -1,32 +1,35 @@
 let myCal = document.getElementById("adventCal");
-let currentDate = new Date('2100-12-25');
+let currentDate = new Date();
 
 
 function Door(calendar, day) {
     this.adventMessage = messages[day - 1][0];
     
-
     this.content = function () {
         let node = document.createElement("li");
         document.getElementById("adventDoors").appendChild(node);
         node.id = "door" + day;
         node.classList.add("door");
-
         let innerNode = document.createElement("a");
         node.appendChild(innerNode);
         innerNode.innerHTML = day;
         innerNode.href = "#";   
-
-        if ( ( currentDate.getMonth() + 1 ) < 12 ||  currentDate.getDate() < day)  {
+        
+        // Das Problem ist hier in der Bedingung - für Testzwecke alle Türen aktivieren
+        // Originalbedingung: ( currentDate.getMonth() + 1 ) < 12 ||  currentDate.getDate() < day
+        // Neue Bedingung für Testzwecke: false 
+        // Oder für korrektes Verhalten: day > currentDate.getDate() && (currentDate.getMonth() + 1) === 12
+        if (day > currentDate.getDate() && (currentDate.getMonth() + 1) === 12) {
             innerNode.className = "disabled";
             innerNode.onclick = function () {
                 return false;
-            }
+            };
         } else {
             let adventMessage = this.adventMessage;
             innerNode.onclick = function () { 
                 openDoorDiv(adventMessage, day);
-            }
+                return false; // Verhindert das Springen zum Seitenanfang
+            };
         }
     };
 }
