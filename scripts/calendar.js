@@ -1,5 +1,5 @@
 let myCal = document.getElementById("adventCal");
-let currentDate = new Date('2024-12-25');
+let currentDate = new Date('2100-12-25');
 
 
 function Door(calendar, day) {
